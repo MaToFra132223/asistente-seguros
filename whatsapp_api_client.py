@@ -27,11 +27,11 @@ class WhatsAppAPIClient:
         }
         
         # [SANDBOX FIX] Argentina: Meta a veces requiere quitar el 9 después del 54
-        # Si el número empieza con 549..., probamos enviarlo como 54...
-        if to_number.startswith("549") and len(to_number) > 10:
-            clean_number = "54" + to_number[3:]
-            print(f"[API] Ajustando número Argentina para Sandbox: {to_number} -> {clean_number}")
-            to_number = clean_number
+        # Comentado para probar envío directo al ID recibido
+        # if to_number.startswith("549") and len(to_number) > 10:
+        #    clean_number = "54" + to_number[3:]
+        #    print(f"[API] Ajustando número Argentina para Sandbox: {to_number} -> {clean_number}")
+        #    to_number = clean_number
 
         payload = {
             "messaging_product": "whatsapp",
