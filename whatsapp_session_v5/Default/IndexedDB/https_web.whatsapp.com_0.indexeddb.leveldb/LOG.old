@@ -1,0 +1,14 @@
+2026/02/12-18:11:27.381 3d6c Reusing MANIFEST C:\Users\Pablo Mirabet\.gemini\antigravity\scratch\asistente-seguros\whatsapp_session_v5\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/02/12-18:11:27.382 3d6c Recovering log #67
+2026/02/12-18:11:27.400 3d6c Reusing old log C:\Users\Pablo Mirabet\.gemini\antigravity\scratch\asistente-seguros\whatsapp_session_v5\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000067.log 
+2026/02/12-18:15:15.991 73f8 Level-0 table #73: started
+2026/02/12-18:15:16.013 73f8 Level-0 table #73: 1302916 bytes OK
+2026/02/12-18:15:16.016 73f8 Delete type=0 #67
+2026/02/12-18:15:16.629 52a8 Compacting 1@1 + 2@2 files
+2026/02/12-18:15:16.714 52a8 Generated table #74@1: 69906 keys, 2301701 bytes
+2026/02/12-18:15:16.778 52a8 Generated table #75@1: 43418 keys, 1857612 bytes
+2026/02/12-18:15:16.778 52a8 Compacted 1@1 + 2@2 files => 4159313 bytes
+2026/02/12-18:15:16.779 52a8 compacted to: files[ 0 0 2 0 0 0 0 ]
+2026/02/12-18:15:16.779 52a8 Delete type=2 #69
+2026/02/12-18:15:16.779 52a8 Delete type=2 #70
+2026/02/12-18:15:16.779 52a8 Delete type=2 #73

@@ -1,0 +1,50 @@
+¡Hola! Aquí tienes los pasos para usar tu nuevo Asistente de Seguros con Inteligencia Artificial.
+
+PASO 1: Instalación (Solo la primera vez)
+=========================================
+1.  Asegúrate de tener instalado **Python** en tu computadora.
+    (Si no lo tienes, descárgalo de python.org y al instalarlo marca la casilla "Add Python to PATH").
+
+2.  Haz doble clic en el archivo llamado:
+    👉 `INSTALAR.bat`
+
+    (Se abrirá una ventana negra que instalará todo lo necesario. Espera a que termine y diga "Instalación completada").
+
+
+PASO 2: Configuración (¡Personalízalo!)
+=======================================
+1.  Busca el archivo llamado:
+    👉 `configuracion.py`
+
+2.  Haz clic derecho sobre él y elige "Abrir con" -> "Bloc de notas".
+
+3.  Cambia los textos que están entre comillas "" para poner los datos de TU oficina:
+    - `NOMBRE_AGENCIA`: El nombre de tu aseguradora.
+    - `INSTRUCCIONES_DERIVACION`: Cambia los nombres de "Flor", "Yanina", etc. por TUS empleados o por TI MISMO.
+    - `STANDARD_PROCEDURES`: Si quieres cambiar los teléfonos de las grúas.
+
+    ¡IMPORTANTE!: Los nombres de los contactos para derivar deben ser EXACTAMENTE IGUALES a como los tienes agendados en tu WhatsApp (respetando mayúsculas y acentos).
+
+
+PASO 3: Clave de Inteligencia Artificial (API Key)
+==================================================
+1.  Necesitas una clave gratuita de Google Gemini.
+2.  Ve a esta web: https://aistudio.google.com/app/apikey
+3.  Crea una clave API.
+4.  Abre el archivo `.env` (o crea uno nuevo copiando `.env.example`) con el Bloc de notas.
+5.  Pega tu clave donde dice `GEMINI_API_KEY=tu_clave_aqui`.
+
+
+PASO 4: ¡A trabajar!
+====================
+1.  Haz doble clic en:
+    👉 `INICIAR_BOT.bat`
+
+2.  Se abrirá una ventana negra y luego un navegador Chromium.
+3.  Escanea el código QR con tu WhatsApp (como si fuera WhatsApp Web).
+4.  ¡Listo! El bot empezará a leer y responder.
+
+---
+CONSEJOS:
+- Para detener el bot, haz clic en la ventana negra y presiona `Ctrl + C`.
+- Si cambias algún nombre en `configuracion.py`, cierra y vuelve a abrir el bot para que tome los cambios.
