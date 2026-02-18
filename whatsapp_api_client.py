@@ -40,6 +40,12 @@ class WhatsAppAPIClient:
             "text": {"body": message_text}
         }
 
+        # [SANDBOX FIX] Mapping automatico para devolver mensajes al formato aceptado
+        # El webhook recibe 5493406641186 pero la API solo acepta 54340615641186 en sandbox
+        if to_number == "5493406641186":
+             print(f"[API] Aplicando corrección de formato para Sandbox: {to_number} -> 54340615641186")
+             payload["to"] = "54340615641186"
+
         try:
             response = requests.post(self.base_url, headers=headers, json=payload)
             response.raise_for_status() # Lanza excepción si hay error HTTP
