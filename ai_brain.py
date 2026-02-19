@@ -51,9 +51,13 @@ class AIBrain:
         import datetime
         
         # Obtener fecha y hora actual
-        now = datetime.datetime.now()
-        dia_semana = now.strftime("%A") # Monday, Tuesday...
-        hora_actual = now.strftime("%H:%M")
+        # Obtener fecha y hora actual (Ajustado a Argentina GMT-3)
+        # Render usa UTC por defecto, restamos 3 horas
+        utc_now = datetime.datetime.now(datetime.timezone.utc)
+        argentina_time = utc_now - datetime.timedelta(hours=3)
+        
+        dia_semana = argentina_time.strftime("%A") # Monday, Tuesday...
+        hora_actual = argentina_time.strftime("%H:%M")
         
         # Traducir día
         dias = {"Monday": "Lunes", "Tuesday": "Martes", "Wednesday": "Miércoles", "Thursday": "Jueves", "Friday": "Viernes", "Saturday": "Sábado", "Sunday": "Domingo"}
